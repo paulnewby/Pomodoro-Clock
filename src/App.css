@@ -1,38 +1,146 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+main {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background:url(http://artem.anmedio.ru/dev/planet/space.jpg) repeat;
+  overflow: hidden;
+}
+
+
+.clock-container {
+  box-shadow:
+  inset 0 0 50px #65868B,      /* inner white */
+        inset 20px 0 80px #C6D3E3,
+        inset -20px 0 80px #93B8BE	,  /* inner right cyan short */
+        inset 20px 0 300px 	#BBE1E4,  /* inner left magenta broad */
+        inset -20px 0 300px 	#f8f8ff; /* inner right cyan broad */
+  background-color: #D5FBFC;  
+  border-radius: 50%;
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 100px;
+  font-family: 'Orbitron', sans-serif;
+  color: black;	
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;	
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.timer-text {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 100px;
+  font-family: 'Orbitron', sans-serif;
+  color: black;	
+
+}
+
+.interval-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 40px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.interval-length-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+
+button {
+  padding: 5px 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  color: black	;	
+  background-color: #D5FBFC;  
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow:
+  inset 0 0 50px #65868B,      /* inner white */
+        inset 20px 0 80px #C6D3E3,
+        inset -20px 0 80px #93B8BE	,  /* inner right cyan short */
+        inset 20px 0 300px 	#BBE1E4,  /* inner left magenta broad */
+        inset -20px 0 300px 	#f8f8ff; /* inner right cyan broad */
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:disabled {
+  cursor: not-allowed;
+}
+
+.interval-length {
+  font-size: 2.5rem;
+  color: white;	
+  margin: 0 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.timer-items-formatting {
+  display: flex;
+  flex-direction: row;
+}
+
+.timer-container {
+  margin-top: 40px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #D5FBFC;  
+  box-shadow:
+  inset 0 0 50px #65868B,      /* inner white */
+        inset 20px 0 80px #C6D3E3,
+        inset -20px 0 80px #93B8BE	,  /* inner right cyan short */
+        inset 20px 0 300px 	#BBE1E4,  /* inner left magenta broad */
+        inset -20px 0 300px 	#f8f8ff; /* inner right cyan broad */
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.timer {
+  font-size: 4rem;
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.timer-actions {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
 }
